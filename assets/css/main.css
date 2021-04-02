@@ -1,0 +1,225 @@
+/* HEADER */
+
+.header__navbar {
+    background-color: #000;
+    height: 46px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar-nav .nav-item .nav-link,
+.search-input {
+    padding: 10.5px 24px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-item:hover .nav-link {
+    background-color: #ccc;
+    color: #000;
+}
+
+.search-input:hover {
+    color: #fff;
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.header-subnav:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    left: -1px;
+    top: 98%;
+    border-radius: 0;
+    min-width: 160px;
+    display: none;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.dropdown-item {
+    padding: 8px 16px;
+}
+
+.dropdown-item:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+/* ------------------------------ */
+
+.content {
+    padding-top: 46px;
+}
+
+
+/* slider */
+
+.carousel-caption-heading {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.carousel-caption-decs {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+
+/* the band section */
+
+.carousel-caption-content {
+    z-index: 0;
+}
+
+.content-section {
+    padding: 64px 16px;
+    max-width: 800px;
+}
+
+.content-section-heading {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.content-sub-heading {
+    margin: 15px 0;
+    opacity: 0.60;
+    font-size: 15px;
+}
+
+.content-text {
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.member-list {
+    padding: 32px 0;
+}
+
+.member-name {
+    margin: 15px 0;
+    font-size: 15px;
+}
+
+.member-img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+.tour-section {
+    background-color: #000;
+}
+
+.ticket-list {
+    background-color: #fff;
+    list-style: none;
+}
+
+.ticket-list li {
+    color: #757575;
+    font-size: 15px;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.ticket-list .sold-out {
+    color: #fff;
+    background-color: #f44336;
+    margin-left: 16px;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.ticket-list .quantity {
+    float: right;
+    background-color: #000;
+    color: #fff;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-radius: 50%;
+}
+
+.place-list {
+    padding: 32px 0;
+}
+
+.place-img {
+    width: 100%;
+}
+
+.place-img:hover {
+    opacity: 0.60;
+}
+
+.place-body {
+    background-color: #fff;
+    color: #000;
+}
+
+.place-heading {
+    padding: 15px 0;
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.place-time {
+    opacity: 0.60;
+    font-size: 15px;
+}
+
+.place-desc {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.contact-content {
+    padding: 32px 0;
+}
+
+.contact-info {
+    font-size: 18px;
+}
+
+.contact-info i {
+    width: 30px;
+}
+
+.form-control {
+    border-radius: 0;
+}
+
+.footer-content {
+    opacity: 0.60;
+}
+
+.footer-content i {
+    font-size: 30px;
+    width: 30px;
+}
+
+.footer-content i:hover {
+    opacity: 0.50;
+}
+
+.footer-text {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.footer-text a {
+    text-decoration: underline;
+    color: inherit;
+}
