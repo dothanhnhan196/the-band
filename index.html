@@ -22,42 +22,46 @@
 
 <body>
     <div id="app">
-        <!-- header -->
         <header id="header">
             <!-- navbar -->
-            <nav class="navbar navbar-expand-lg p-0 header__navbar">
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+            <ul id="nav">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#the-band">Band</a>
+                </li>
+                <li>
+                    <a href="#tour">Tour</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+                <li>
+                    <a href="#">
+                        More 
+                        <i class="nav-arrow-down fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li>
+                            <a href="">Merchandise</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Band</a>
+                        <li>
+                            <a href="">Extras</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tour</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown header-subnav">
-                            <a class="nav-link dropdown-toggle header-subnav-link" href="#">
-                              More
-                            </a>
-                            <div class="dropdown-menu m-0 p-0">
-                                <a class="dropdown-item" href="#">Merchandise</a>
-                                <a class="dropdown-item" href="#">Extras</a>
-                                <a class="dropdown-item" href="#">Media</a>
-                            </div>
+                        <li>
+                            <a href="">Media</a>
                         </li>
                     </ul>
-                    <!-- search input -->
-                    <div class="navbar-text search-input">
-                        <i class="fas fa-search search-icon"></i>
-                    </div>
-                </div>
-            </nav>
-
+                </li>
+            </ul>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon fas fa-bars"></i>
+            </div>
+            <!-- search btn -->
+            <div class="search-btn">
+                <i class="search-icon fas fa-search"></i>
+            </div>
         </header>
         <!-- Content -->
         <div class="content">
@@ -88,7 +92,7 @@
                 </div>
             </div>
             <!-- The band section -->
-            <div class="container content-section text-center">
+            <div id="the-band" class="container content-section text-center">
                 <h2 class="content-section-heading">the band</h2>
                 <p class="content-sub-heading font-italic">We love music</p>
                 <div class="content-text text-justify">
@@ -97,22 +101,22 @@
                     consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </div>
                 <div class="row member-list">
-                    <div class="col col-4 member-item">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 member-item">
                         <div class="member-name">Name</div>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="col col-4 member-item">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 member-item">
                         <div class="member-name">Name</div>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
-                    <div class="col col-4 member-item">
+                    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 member-item">
                         <div class="member-name">Name</div>
                         <img src="./assets/img/band/member1.jpg" alt="" class="member-img">
                     </div>
                 </div>
             </div>
             <!-- The tour section -->
-            <div class="tour-section">
+            <div id="tour" class="tour-section">
                 <div class="container content-section text-white">
                     <h2 class="content-section-heading text-center">TOUR DATES</h2>
                     <p class="content-sub-heading font-italic text-center">Remember to book your tickets!</p>
@@ -125,7 +129,7 @@
                     </ul>
                     <!-- Place -->
                     <div class="row place-list">
-                        <div class="col col-4 place-item">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 place-item">
                             <img src="./assets/img/places/place1.jpg" alt="" class="place-img">
                             <div class="container place-body">
                                 <p class="place-heading">New York</p>
@@ -134,7 +138,7 @@
                                 <a href="#" class="btn btn-item">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="col col-4 place-item">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 place-item">
                             <img src="./assets/img/places/place2.jpg" alt="" class="place-img">
                             <div class="container place-body">
                                 <p class="place-heading">Paris</p>
@@ -143,7 +147,7 @@
                                 <a href="#" class="btn btn-item">Buy Tickets</a>
                             </div>
                         </div>
-                        <div class="col col-4 place-item">
+                        <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 place-item">
                             <img src="./assets/img/places/place3.jpg" alt="" class="place-img">
                             <div class="container place-body">
                                 <p class="place-heading">San Francisco</p>
@@ -156,16 +160,16 @@
                 </div>
             </div>
             <!-- Contact section -->
-            <div class="container content-section">
+            <div id="contact" class="container content-section">
                 <h2 class="content-section-heading text-center">CONTACT</h2>
                 <p class="content-sub-heading font-italic text-center">Fan? Drop a note!</p>
                 <div class="row contact-content">
-                    <div class="col col-6 contact-info">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 contact-info">
                         <p><i class="fas fa-map-marker-alt"></i>Chicago, US</p>
                         <p><i class="fas fa-phone"></i>Phone: +00 151515</p>
                         <p><i class="fas fa-envelope"></i>Email: mail@mail.com</p>
                     </div>
-                    <div class="col col-6 contact-form">
+                    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 contact-form">
                         <form>
                             <div class="form-row">
                                 <div class="form-group col-md-6">
@@ -184,22 +188,54 @@
                 </div>
                 <br>
             </div>
-            <!-- Google map section -->
-            <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.1469815773175!2d106.37602331525854!3d10.249727371495682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310aa8f1a9280b2b%3A0xf6266f06bd016972!2zTmjDoCBNw6F5IFRodeG7kWMgTMOhIELhur9uIFRyZQ!5e0!3m2!1svi!2s!4v1617348703975!5m2!1svi!2s"
-                    width="100%" height="700" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
+            <!-- Img section -->
+            <img src="./assets/img/location/map.jpg" alt="" class="img-location">
         </div>
-        <footer class="footer container content-section text-center footer-content">
-            <i class="fab fa-facebook-square"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-git-square"></i>
-            <i class="fab fa-twitter-square"></i>
-            <p class="footer-text text-decoration-underline">Powered by <a href="https://www.facebook.com/profile.php?id=100012038471714">Nhân</a></p>
+        <footer class="footer footer-content">
+            <div class="container content-section text-center ">
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-git-square"></i>
+                <i class="fab fa-twitter-square"></i>
+                <p class="footer-text text-decoration-underline">Powered by <a href="https://www.facebook.com/profile.php?id=100012038471714">Nhân</a></p>
+            </div>
         </footer>
     </div>
-
     </div>
+    <!-- Responsive mobile -->
+    <script>
+        var header = document.getElementById('header');
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHeight = header.clientHeight;
+
+        // đóng mở mobile menu
+        mobileMenu.onclick = function() {
+            var isClose = header.clientHeight === headerHeight;
+            if (isClose) {
+                header.style.height = 'auto';
+            } else {
+                header.style.height = null;
+            }
+        }
+
+        // tự động đóng khi chọn menu
+        var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+        for (var i = 0; i < menuItems.length; i++) {
+            var menuItem = menuItems[i];
+
+
+            menuItem.onclick = function() {
+                // nếu có chị em liền kề (nextElementSibling) và anh chị em liền kề đó chứa class 'subnav' (classList.contains('...'))
+                var isParrentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                if (isParrentMenu) {
+                    // bỏ qua event mặc định
+                    event.preventDefault();
+                } else {
+                    header.style.height = null;
+                }
+            }
+        }
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
